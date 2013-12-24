@@ -15,6 +15,10 @@
     <license>MIT</license>
     <asset src="www/telephonenumber.js" target="telephonenumber.js" />
     
+    <js-module src="www/telephonenumber.js" name="telephonenumber">
+        <clobbers target="telephonenumber" />
+    </js-module>
+
     <platform name="android">
         <source-file src="src/com/simonmacdonald/cordova/plugins/TelephoneNumber.java" target-dir="src/com/simonmacdonald/cordova/plugins" />
         <config-file target="res/xml/config.xml" parent="/*">
